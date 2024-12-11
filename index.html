@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <title>tui co điều bất ngờ nè</title> 
+  <title>điều tui muốn nói</title> 
   <style>
     body {
   margin: 0;
@@ -22,12 +22,9 @@
 h1 {
   position: fixed;
   top: 30px;
-  /* đặt tiêu đề ở vị trí trên cùng của trang*/
   left: 50%;
-  /* Căn giữa theo chiều ngang*/
   font-size: 50px;
   transform: translateX(-50%);
-  /* Điều chỉnh vị trí để căn giữa hoàn hảo*/
 }
 a {
   position: fixed;
@@ -128,14 +125,13 @@ button:hover {
 }
 </style>
 </head>
-   
 <body>
 
   <h1>Anh có điều muốn nói</h1>
   <button onclick="generateRandomNotifications()">Nhấn đây nè</button>
   <script>
     const messages = [
-  "sinh nhat vui veeee"
+  "Sinh nhat vui veeee"
 ];
 
 function generateRandomNotifications() {
@@ -150,7 +146,7 @@ function generateRandomNotifications() {
       notification.innerHTML = `
         <div class="notification-header">
           <button class="minimize-btn" onclick="minimizeNotification(this)">–</button>
-          <span>Anh chuc em</span>
+          <span>anh chuc em</span>
         </div>
         <p>${randomMessage}</p>
       `;
@@ -179,3 +175,4 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </body>
 </html>
+
